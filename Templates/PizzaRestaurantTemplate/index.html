@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<title>Pizza restaurant </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	<style>
+		body, html {height: 100%}
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+		.menu {display: none}
+		.bgimg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("Imagens/pizza.jpg");
+		min-height: 90%;
+		}
+	</style>
+	<body>
+		
+		<!-- Navbar (sit on top) -->
+		<div class="top hide-small">
+			<div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+				<a href="#" class="bar-item button">HOME</a>
+				<a href="#menu" class="bar-item button">MENU</a>
+				<a href="#about" class="bar-item button">ABOUT</a>
+				<a href="#myMap" class="bar-item button">CONTACT</a>
+			</div>
+		</div>
+		
+		<!-- Header with image -->
+		<header class="bgimg display-container grayscale-min" id="home">
+			<div class="display-bottomleft padding">
+				<span class="tag xlarge">Aberto das 18h às 01h</span>
+			</div>
+			<div class="display-middle center">
+				<span class="text-white hide-small" style="font-size:100px">Nós<br>AMAMOS PIZZA</span>
+				<span class="text-white hide-large hide-medium" style="font-size:60px">Nós<br>AMAMOS PIZZA</b></span>
+				<p><a href="#menu" class="button xxlarge black">Acesse nosso cardápio</a></p>
+				
+			</div>
+		</header>
+		
+		<!-- Menu Container -->
+		<div class="container black padding-64 xxlarge" id="menu">
+			<div class="content">
+				
+				<h1 class="center jumbo" style="margin-bottom:64px">CARDÁPIO</h1>
+				<div class="row center border border-dark-grey">
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+						<div class="col s4 tablink padding-large hover-red">Pizzas</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+						<div class="col s4 tablink padding-large hover-red">Bebidas</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+						<div class="col s4 tablink padding-large hover-red">Lanches</div>
+					</a>
+				</div>
+				
+				<div id="Pizza" class="container menu padding-32 white">
+					<h1><b>Mussarela</b> <span class="right tag dark-grey round">R$ 22.00</span></h1>
+					<p class="text-grey">Massa, molho de tomate e queijo mussarela.</p>
+					<hr>
+					
+					<h1><b>Corn Bacon</b> <span class="right tag dark-grey round">R$ 25.00</span></h1>
+					<p class="text-grey">Massa, molho de tomate, queijo mussarela, milho e bacon.</p>
+					<hr>
+					
+					<h1><b>Palmito</b> <span class="right tag dark-grey round">R$ 25.00</span></h1>
+					<p class="text-grey">Massa, molho de tomate, queijo mussarela e palmito.</p>
+					<hr>
+					
+					<h1><b>Mussarela</b> <span class="right tag dark-grey round">R$ 25.00</span></h1>
+					<p class="text-grey">Massa, molho de tomate, queijo mussarela e calabresa.</p>
+					<hr>
+					
+					<h1><b>Mexicana</b> <span class="tag red round">PIMENTA!</span><span class="right tag dark-grey round">R$ 29.90</span></h1>
+					<p class="text-grey">Massa, molho de tomate, queijo mussarela, pimenta do reino e pimentões fatiados. </p>
+					<hr>
+					
+					<h1><b>Parma</b> <span class="tag grey round">Novidade</span><span class="right tag dark-grey round">R$ 38.00</span></h1>
+					<p class="text-grey">Massa, molho de tomate, queijo mussarela e presunto de parma.</p>
+				</div>
+				
+				<div id="Pasta" class="container menu padding-32 white">
+					<h1><b>Coca-Cola</b> <span class="tag grey round">+ Vendido</span> <span class="right tag dark-grey round">R$ 5.00</span></h1>
+					<p class="text-grey">Lata 355ml</p>
+					<hr>
+					
+					<h1><b>Guaraná Antartica</b> <span class="right tag dark-grey round">R$ 4.50</span></h1>
+					<p class="text-grey">Lata 355ml</p>
+					<hr>
+					
+					<h1><b>Fanta Laranja</b> <span class="right tag dark-grey round">R$ 4.00</span></h1>
+					<p class="text-grey">Lata 355ml</p>
+					<hr>
+					
+					<h1><b>Chopp Brahma</b> <span class="right tag dark-grey round">R$ 15.00</span></h1>
+					<p class="text-grey">Caneco de 500ml</p>
+				</div>
+				
+				
+				<div id="Starter" class="container menu padding-32 white">
+					<h1><b>X-Salada</b> <span class="tag grey round">+ Vendido</span><span class="right tag dark-grey round">R$ 15.00</span></h1>
+					<p class="text-grey">Pão de brioche, hamburguer artesanal 180g, muito queijo e maionese de alho</p>
+					<hr>
+					
+					<h1><b>X-Bacon</b> <span class="right tag dark-grey round">R$ 15.00</span></h1>
+					<p class="text-grey">Pão de brioche, hamburguer artesanal 180g, muito queijo, fatias de bacon e maionese de alho</p>
+					<hr>
+					
+					<h1><b>X-Egg</b> <span class="right tag dark-grey round">R$ 15.00</span></h1>
+					<p class="text-grey">Pão de brioche, hamburguer artesanal 180g, muito queijo, ovo frito e maionese de alho</p>
+					<hr>
+					
+					<h1><b>X-Calabresa</b> <span class="right tag dark-grey round">R$ 15.00</span></h1>
+					<p class="text-grey">Pão de brioche, hamburguer artesanal 180g, muito queijo, calabresa fatiada e maionese de alho</p>
+				</div><br>
+				
+			</div>
+		</div>
+		
+		<!-- About Container -->
+		<div class="container padding-64 red grayscale xlarge" id="about">
+			<div class="content">
+				<h1 class="center jumbo" style="margin-bottom:64px">About</h1>
+				<p>The Pizza Restaurant was founded in blabla by Mr. 
+					Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p><strong>The Chef?</strong> Mr. Italiano himself<img src="Imagens/chef.jpg" style="width:150px" class="circle right" alt="Chef"></p>
+				<p>We are proud of our interiors.</p>
+				<img src="Imagens/onepage_restaurant.jpg" style="width:100%" class="margin-top margin-bottom" alt="Restaurant">
+				<h1><b>Opening Hours</b></h1>
+				
+				<div class="row">
+					<div class="col s6">
+						<p>Fechado às Segundas</p>
+						<p>Terça-feira 18h - 01h</p>
+						<p>Quarta-feira 18h - 01h</p>
+						<p>Quarta-feira 18h - 01h</p>
+					</div>
+					<div class="col s6">
+						<p>Sexta-feira 18h - 03h</p>
+						<p>Sabados 18h - 03h</p>
+						<p>Domingos 18h - 00h</p>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- Image of location/map -->
+		<img src="Imagens/map.jpg" class="image greyscale" style="width:100%;" id="myMap">
+		
+		<!-- Contact -->
+		<div class="container padding-64 blue-grey grayscale-min xlarge">
+			<div class="content">
+				<h1 class="center jumbo" style="margin-bottom:64px">Contact</h1>
+				
+				<p>Venha até nosso endereço ou ligue para reservar uma mesa</p>
+				
+				<p class="xxlarge"><strong>Reservas</strong> e eventos, envie-nos uma mensagem:</p>
+				<div    style="margin-top:48px">
+                    <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Avenida Logo Ali - Curitiba - PR   </p>
+                    <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 xxxx-xxxx                      </p>
+                    <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: e-mail@email.com         </p>
+                    <br>
+                </div>
+				
+			</div>
+		</div>
+		
+		
+		<!-- Footer -->
+		<footer class="center black padding-48 xxlarge">
+			
+			<p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            
+                    Todos os direitos reservados - 2021 </small>
+                    <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+					
+		</footer>
+		
+		<script>
+			// Tabbed Menu
+			function openMenu(evt, menuName) {
+				var i, x, tablinks;
+				x = document.getElementsByClassName("menu");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < x.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" red", "");
+				}
+				document.getElementById(menuName).style.display = "block";
+				evt.currentTarget.firstElementChild.className += " red";
+			}
+			document.getElementById("myLink").click();
+		</script>
+		
+	</body>
+</html>

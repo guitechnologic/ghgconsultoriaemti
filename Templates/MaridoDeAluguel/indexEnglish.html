@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+	<title>Marido de Aluguel</title>
+	<meta	charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,	initial-scale=1">
+	<meta   http-equiv="X-UA-Compatible"	content="IE-edge">
+	<meta	name="geo.region"		content="BR-SC">
+	<meta	name="geo.placement"	content="Itajaí">
+	<meta	name="geo.position"		content="-25.36997746782584,	-49.16598553283551">
+	<meta	name="ICBM"				content="-25.36997746782584,	-49.16598553283551">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link	rel="stylesheet"	href="estilo.css">
+	<link	rel="stylesheet"	href="https://fonts.googleapis.com/css?family=Raleway">
+	<link	rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+		
+		body, html {
+		height: 100%;
+		line-height: 1.8;
+		}
+		
+		/* Full height image header */
+		.bgimg-1 {
+		background-position: center;
+		background-size: cover;
+		background-color: black;
+		min-height: 100%;
+		}
+		
+		.bar .button {
+		padding: 16px;
+		border-radius: 12px;
+		}
+	</style>
+	<body>
+		
+		<!-- Navbar (sit on top) -->
+		<div class="top">
+			<div class="bar black card center" id="myNavbar">
+				<a href="#home" class="bar-item button wide"></a>
+				<!-- Right-sided navbar links -->
+				<div class="center hide-small">
+					
+					
+
+
+					<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"
+						class="button	black	fa	fa-plug"		class="bar-item button">			</i>	ELECTRICAL		</a>
+
+					<a	href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'"
+						class="button	black	fa	fa-shower"		class="bar-item button">			</i>	HYDRAULICS		</a>
+
+					<a	href="#predial"		onclick="document.getElementById('pintura')		.style.display='block'"
+						class="button	black	fas	fa-paint-roller"		class="bar-item button">	</i>	PAINTINGS		</a>
+
+					<a	href="#diversos"	onclick="document.getElementById('manutencao')	.style.display='block'"
+						class="button	black	fa	fa-wrench"		class="bar-item button">			</i>	MAINTENANCE		</a>
+
+					<a	href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"
+						class="button	black	fa	fa-gears"		class="bar-item button">			</i>	CIVIL ENGINEERING	</a>
+
+					<a  href="#contact"	onclick="botaoFechar()"		class="button fa fa-mobile-phone">	CONTACT  </a>
+
+					<a  href="index.html"	onclick="botaoFechar()"		class="button fa fa-globe">	PORTUGUES  </a>
+				</div>
+
+				
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				
+				<a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="_open()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+
+		
+		
+		<!-- Sidebar on small screens when clicking the menu icon -->
+		<nav class="sidebar bar-block left black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+			<a href="javascript:void(0)" onclick="_close()" class="bar-item button large padding-16">FECHAR</a>
+			<a href="#about"		onclick="_close()" class="bar-item button">	HOME		</a>
+			<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"	class="bar-item button">	ELECTRICAL	</a>
+			<a href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'" class="bar-item button">	HYDRAULICS	</a>
+			<a href="#pintura"		onclick="document.getElementById('pintura')		.style.display='block'"	class="bar-item button">	PAINTINGS	</a>
+			<a href="#manutencao"	onclick="document.getElementById('manutencao')	.style.display='block'"	class="bar-item button">	MAINTENANCE	</a>
+			<a href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"	class="bar-item button">	CIVIL ENGINEERING	</a>
+			<a href="#contact"		onclick="_close()" class="bar-item button"	class="bar-item button">	CONTACT	</a>
+			<a href="index.html"		onclick="_close()" class="bar-item button"	class="bar-item button">	PORTUGUES	</a>
+		</nav>
+		
+		<!-- Header with full-height image -->
+		<header class="bgimg-1 display-container grayscale-min" id="home">
+			<div class="display-left text-white" style="padding:48px">
+				<span class="jumbo hide-small ">A² s RENOVATIONS AND CONSTRUCTIONS</span><br>
+				<span class="xxlarge hide-large hide-medium">A² s RENOVATIONS AND CONSTRUCTIONS</span><br>
+				<span class="large"></span><br>
+				<span class="large"></span><br>
+				<span class="large">	CIVIL CONSTRUCTION, MAINTENANCE & RESOURCE ALLOCATION</span><br>
+				<span class="large"><i class="fa fa-phone">	( 43 ) 9 xxxx - xxxx </i><br>
+				<span class="large"><i class="fa fa-phone">	( 41 ) 9 xxxx - xxxx </i><br>
+				</span>
+
+			</div> 
+
+		</header>
+		
+		<!-- Menu Elétrica -->
+		<div id="eletrica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('eletrica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Fast Services (24-hour service)<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Switching switches			<b></b></h5>
+					<h5>Changing light bulbs		<b></b></h5>
+					<h5>Electrical outlet repair	<b></b></h5>
+					<h5>Circuit breaker replacement	<b></b></h5>
+					<h5>Lighting timer				<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>	Installations	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Installation of sockets							<b></b></h5>
+					<h5>Installation of switches						<b></b></h5>
+					<h5>Installation of chandeliers, lamps and the like	<b></b></h5>
+					<h5>Instalação de torneira elétrica					<b></b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>Construction	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Residential electrical network installation	<b></b></h5>
+					<h5>Industrial electrical network installation	<b></b></h5>
+					<h5>Industrial lighting installation			<b></b></h5>
+					<h5>Installation of electrical panels			<b></b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Hidraulica -->
+		<div id="hidraulica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('hidraulica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>	Fast Services (24-hour service)	<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Faucet maintenance <b></b></h5>
+					<h5>Record maintenance <b></b></h5>
+					<h5>Maintenance on leaks <b></b></h5>
+					<h5>Maintenance on toilets <b></b></h5>
+					<h5>Maintenance on leaks <b></b></h5>
+					<h5>Change of showers <b></b></h5>
+					<h5>Cleaning drains <b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>	Installations	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Installation of sinks <b></b></h5>
+					<h5>Installation of toilets <b></b></h5>
+					<h5>Installation of washing machines <b></b></h5>
+					<h5>Installation of water tanks <b></b></h5>
+					<h5>Cleaning of water tanks <b></b></h5>
+					<h5>Installation of Hydra <b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Construction	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Plumbing network installation <b></b></h5>
+					<h5>System maintenance <b></b></h5>
+					<h5>Construction of sewage networks <b></b></h5>
+					<h5>Renovations in bathrooms <b></b></h5>
+					<h5>Renovations in kitchens <b></b></h5>
+					<h5>Laundry renovations <b></b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Pintura -->
+		<div id="pintura" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('pintura').style.display='none'" class="button display-topright large">X</span>
+					<h1>	Fast Services (24-hour service)	<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Retouching walls <b></b></h5>
+					<h5>Crack repairs <b></b></h5>
+					<h5>Repairs for small leaks <b></b></h5>
+					<h5>Repairs in grafiatto <b></b></h5>
+					<h5>Texture Fixes <b></b></h5>
+					<h5>Epoxy Floor Repairs <b></b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>	Construction	<i class='fas fa-paint-roller'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Painting facades <b> </b></h5>
+					<h5>Outdoor and indoor paintings <b> </b></h5>
+					<h5>Epoxy floor painting <b> </b></h5>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Manutenção -->
+		<div id="manutencao" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('manutencao').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>	Fast Services (24-hour service)	<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Change of locks <b></b></h5>
+					<h5>Deck repairs <b></b></h5>
+					<h5>Adjustment of furniture doors <b></b></h5>
+					<h5>Port Leveling <b></b></h5>
+					<h5>Window adjustment <b></b></h5>
+					<h5>Exchange of ceramic and porcelain tiles <b></b></h5>
+					<h5>Roof repairs <b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>	Installations	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Installation of doors and windows <b></b></h5>
+					<h5>Laying ceramic and porcelain tiles <b></b></h5>
+					<h5>Installation of thermal blankets on roofs <b></b></h5>
+					<h5>Installation of pre-molded grills <b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>	Construction	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Construction of roofs <b> </b></h5>
+					<h5>Floor and tile renovations <b> </b></h5>
+					<h5>Environment Reforms <b> </b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu civil -->
+		<div id="civil" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('civil').style.display='none'" class="button display-topright large">X</span>
+					<h1>Residential	<i class="fas fa-home"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Foundation and land clearing <b></b></h5>
+					<h5>Construction of swimming pools <b></b></h5>
+					<h5>Enlargement of environments <b></b></h5>
+					<h5>Construction of roofs and garages <b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Industrial	<i class="fas fa-industry"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Construction of industrial sheds <b></b></h5>
+					<h5>Assembling drywall <b></b></h5>
+					<h5>Installation of industrial electrical networks <b></b></h5>
+					<h5>Hot water piping installation <b></b></h5>
+					<h5>Installation of compressors <b></b></h5>
+					<h5>Epoxy floors <b></b></h5>
+					<h5>Construction of frames for zinc roofs <b></b></h5>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<!-- Promo Section "Statistics" -->
+		<div class="container row center light-grey padding-64">
+			<div class="quarter">
+				<span class="xxlarge">+20</span>
+				<br>Years of experience
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">+500</span>
+				<br>Projects carried out
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">+100</span>
+				<br>Loyal Customers
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">10+</span>
+				<br>Among the ten most sought after professionals in the region
+			</div>
+		</div>
+
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="modal black" onclick="this.style.display='none'">
+			<span class="button xxlarge black padding-large display-topright" title="Close Modal Image">×</span>
+			<div class="modal-content animate-zoom center transparent padding-64">
+				<img id="img01" class="image">
+				<p id="caption" class="opacity large"></p>
+			</div>
+		</div>
+
+		<!-- 07.1 - Nossos clientes -->
+        <div    class="container "   style="padding:128px    16px"   >
+            <h1 class="center"> </h1>
+                <h1  class="center   large"> Our clients: </h1>
+
+            <!-- 07.2- Nossos parceiros -->
+            <div    class="row-padding" style="margin-top:64px">
+
+                <div    class="col  l3  m6">
+                    <a href="https://www.globofiat.com.br/" target="_blank">
+                    <img    src="Imagens/fiat.png"        style="width:100%"  class="hover-opacity"   alt="fiat">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.globoford.com.br/" target="_blank">
+                    <img    src="Imagens/ford.png"        style="width:100%"  class="hover-opacity"   alt="ford">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.globojeep.com.br/" target="_blank">
+                    <img    src="Imagens/jeep.jpg"        style="width:100%"  class="hover-opacity"   alt="jeep">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.globonissan.com.br/" target="_blank">
+                    <img    src="Imagens/nissan.png"        style="width:100%"  class="hover-opacity"   alt="nissan">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.globorenault.com.br/" target="_blank">
+                    <img    src="Imagens/renaultGlobo.png"        style="width:100%"  class="hover-opacity"   alt="renaultGlobo">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.grupoglobo.com.br/" target="_blank">
+                    <img    src="Imagens/grupoblogo.png"        style="width:100%"  class="hover-opacity"   alt="grupoblogo">
+                </a>
+                </div>
+            </div>
+
+        </div>
+
+		<!-- 07.1 - Nossos parceiros -->
+        <div    class="container black"   style="padding:128px    16px"   >
+            <h1 class="center"> </h1>
+                <h1  class="center   large"> Our partners: </h1>
+
+            <!-- 07.2- Nossos parceiros -->
+            <div    class="row-padding" style="margin-top:64px">
+
+                <div    class="col  l3  m6">
+                    <a href="https://www.votorantimcimentos.com.br/" target="_blank">
+                    <img    src="Imagens/votoran.png"        style="width:100%"  class="hover-opacity"   alt="votoran">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.suvinil.com.br/" target="_blank">
+                    <img    src="Imagens/suvinil.png"        style="width:100%"  class="hover-opacity"   alt="suvinil">
+                </a>
+                </div>
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.tigre.com.br/" target="_blank">
+                    <img    src="Imagens/tigre.png"        style="width:100%"  class="hover-opacity"   alt="tigre">
+                </a>
+                </div>
+            </div>
+
+        </div>
+		
+		<!-- Contato -->
+		<div class="container black" style="padding:128px 16px" id="contact">
+			<h3 class="center">CONTACT</h3>
+			<p class="center large">	With just one click, send us a message:</p>
+			<div style="margin-top:48px">
+				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Itajaí	-	SC</p>
+				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Camboriú	-	SC</p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/55xx9xxxxxxxx" target="_blank"> </i> WhatsApp (xx) 9 xxxx xxxx </i></a></p>
+				<p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> E-mail: mail@mail.com</p>
+				<br>
+
+				<!-- WhatsApp Flutuante -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+				<a href="https://wa.me/55SeuNumeroDeWhatsApp?text=A%20GHG%20Consultoria%20em%20TI%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje%20?" 
+					style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+						z-index:1000;" 
+					target="_blank">
+				<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+				</a>
+
+				<!-- Google Maps -->
+				<div    class="container black"   >
+					<h1 class="center">Service Region:</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56927.06513471268!2d-48.72900299092664!3d-26.90534939036482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc949bf3cf61%3A0xef02eadd26842207!2sItaja%C3%AD%20-%20Volta%20de%20Cima%2C%20Itaja%C3%AD%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1640096276480!5m2!1spt-BR!2sbr" 
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56875.48020552795!2d-48.66101944038714!3d-27.007484398487602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b668abfea471%3A0x4fca490504a87e6e!2sBalne%C3%A1rio%20Cambori%C3%BA%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1640179929780!5m2!1spt-BR!2sbr" 
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="center black padding-64">
+			<a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Back</a>
+			<div class="xlarge section">
+				<!--<i class="fa fa-facebook-official hover-opacity"></i>
+				<i class="fa fa-instagram hover-opacity"></i>
+				<i class="fa fa-snapchat hover-opacity"></i>
+				<i class="fa fa-pinterest-p hover-opacity"></i>
+				<i class="fa fa-twitter hover-opacity"></i>
+				<i class="fa fa-linkedin hover-opacity"></i>-->
+			</div>
+			<p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG IT Consulting</a></p>
+		</footer>
+		
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+			
+			
+			// Toggle between showing and hiding the sidebar when clicking the menu icon
+			var mySidebar = document.getElementById("mySidebar");
+			
+			function _open() {
+				if (mySidebar.style.display === 'block') {
+					mySidebar.style.display = 'none';
+					} else {
+					mySidebar.style.display = 'block';
+				}
+			}
+			
+			// Close the sidebar with the close button
+			function _close() {
+				mySidebar.style.display = "none";
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+	<title>Marido de Aluguel</title>
+	<meta	charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,	initial-scale=1">
+	<meta   http-equiv="X-UA-Compatible"	content="IE-edge">
+	<meta	name="geo.region"		content="BR-SC">
+	<meta	name="geo.placement"	content="Itajaí">
+	<meta	name="geo.position"		content="-25.36997746782584,	-49.16598553283551">
+	<meta	name="ICBM"				content="-25.36997746782584,	-49.16598553283551">
+	<meta	name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link   rel="icon"                      href="Imagens/Icone.JPG" sizes="10x10" type="image/png">
+	<link	rel="stylesheet"	href="estilo.css">
+	<link	rel="stylesheet"	href="https://fonts.googleapis.com/css?family=Raleway">
+	<link	rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+		
+		body, html {
+		height: 100%;
+		line-height: 1.8;
+		}
+		
+		/* Full height image header */
+		.bgimg-1 {
+		background-position: center;
+		background-size: cover;
+		background-image: url(Imagens/a2solucoes_.JPG);
+		background-color: black;
+		min-height: 100%;
+		}
+		
+		.bar .button {
+		padding: 16px;
+		border-radius: 12px;
+		}
+	</style>
+	
+	<body>
+		
+		<!-- Navbar (sit on top) -->
+		<div class="top">
+			<div class="bar black card center" id="myNavbar">
+				<a href="#home" class="bar-item button wide"></a>
+				<!-- Right-sided navbar links -->
+				<div class="center hide-small">
+					
+					
+
+
+					<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"
+						class="button	black	fa	fa-plug"		class="bar-item button">			</i>	ELÉTRICA		</a>
+
+					<a	href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'"
+						class="button	black	fa	fa-shower"		class="bar-item button">			</i>	HIDRÁULICA		</a>
+
+					<a	href="#predial"		onclick="document.getElementById('pintura')		.style.display='block'"
+						class="button	black	fas	fa-paint-roller"		class="bar-item button">	</i>	PINTURAS		</a>
+
+					<a	href="#diversos"	onclick="document.getElementById('manutencao')	.style.display='block'"
+						class="button	black	fa	fa-wrench"		class="bar-item button">			</i>	MANUTENÇÃO		</a>
+
+					<a	href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"
+						class="button	black	fa	fa-gears"		class="bar-item button">			</i>	ENGENHARIA CIVIL	</a>
+
+					<a  href="#contact"	onclick="botaoFechar()"		class="button fa fa-mobile-phone">	CONTATO  </a>
+
+					<!--<a  href="indexEnglish.html"	onclick="document.getElementById('english')"		class="button fa fa-globe">	ENGLISH  </a>-->
+				</div>
+
+				
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				
+				<a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="_open()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+
+		
+		
+		<!-- Sidebar on small screens when clicking the menu icon -->
+		<nav class="sidebar bar-block left black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+			<a href="javascript:void(0)" onclick="_close()" class="bar-item button large padding-16">FECHAR</a>
+			<a href="#about"		onclick="_close()" class="bar-item button">	HOME		</a>
+			<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"	class="bar-item button">	ELETRICA	</a>
+			<a href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'" class="bar-item button">	HIDRÁULICA	</a>
+			<a href="#pintura"		onclick="document.getElementById('pintura')		.style.display='block'"	class="bar-item button">	PINTURAS	</a>
+			<a href="#manutencao"	onclick="document.getElementById('manutencao')	.style.display='block'"	class="bar-item button">	MANUTENÇÃO	</a>
+			<a href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"	class="bar-item button">	ENGENHARIA CIVIL	</a>
+			<a href="#contact"		onclick="_close()" class="bar-item button"	class="bar-item button">	CONTATO	</a>
+			<!--<a href="indexEnglish.html"		onclick="_close()" class="bar-item button"	class="bar-item button">	ENGLISH	</a>-->
+		</nav>
+		
+		<!-- Header with full-height image -->
+		<header class="bgimg-1 display-container grayscale-min" id="home">
+			
+				<div class="display-left text-white" style="padding:48px">
+					<span class="jumbo hide-small ">A² SOLUÇÕES</span><br>
+					<span class="xxlarge hide-large hide-medium">A² SOLUÇÕES</span><br>
+					<span class="large"></span><br>
+					<span class="large"></span><br>
+					<span class="large">	CONSTRUÇÃO	|	TERCEIRIZAÇÃO	|	PINTURAS ESPECIAIS	</span><br>
+				<span class="large"><i class="fa fa-phone"><a href="tel:047992276683">	( 47 ) 9 9227-6683</a>	Allison		</i><br>
+				<span class="large"><i class="fa fa-phone"><a href="tel:041996452636">	( 47 ) 9 9711-7889</a> 	Ari			</i><br>
+				</span>
+
+			</div> 
+
+		</header>
+		
+		<!-- Menu Elétrica -->
+		<div id="eletrica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('eletrica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Troca de interruptores			<b></b></h5>
+					<h5>Troca de lâmpadas 				<b></b></h5>
+					<h5>Conserto de tomadas elétricas	<b></b></h5>
+					<h5>Troca de disjuntores			<b></b></h5>
+					<h5>Timer de iluminação				<b></b></h5>
+					<h5>	<b></b></h5>
+					<h5>	<b></b></h5>
+					<h5>	<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Instalações	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de tomadas 					<b></b></h5>
+					<h5>Instalação de interruptores 			<b></b></h5>
+					<h5>Instalação de lustres, lâmpadas e afins	<b></b></h5>
+					<h5>Instalação de torneira elétrica 		<b></b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>Obras	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de rede elétrica residencial	<b></b></h5>
+					<h5>Instalação de rede elétrica industrial	<b></b></h5>
+					<h5>Instalação de iluminação industrial		<b></b></h5>
+					<h5>Instalação de painéis elétricos 		<b></b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Hidraulica -->
+		<div id="hidraulica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('hidraulica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h)	<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Manutenção em torneiras				<b></b></h5>
+					<h5>Manutenção em registros				<b></b></h5>
+					<h5>Manutenção em vazamentos			<b></b></h5>
+					<h5>Manutenção em vasos sanitários		<b></b></h5>
+					<h5>Manutenção em vazamentos			<b></b></h5>
+					<h5>Troca de chuveiros					<b></b></h5>
+					<h5>Limpeza de ralos 					<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Instalações	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de pias				<b></b></h5>
+					<h5>Instalação de vasos sanitários	<b></b></h5>
+					<h5>Instalação de lavadoras			<b></b></h5>
+					<h5>Instalação de caixas d'água		<b></b></h5>
+					<h5>Limpeza de caixas d'água		<b></b></h5>
+					<h5>Instalação de Hydra				<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Obras	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de rede de encanamento	<b></b></h5>
+					<h5>Manutenção de sisternas				<b></b></h5>
+					<h5>Construção de redes de esgoto		<b></b></h5>
+					<h5>Reformas em banheiros				<b></b></h5>
+					<h5>Reformas em cozinhas				<b></b></h5>
+					<h5>Reformas em lavanderias				<b></b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Pintura -->
+		<div id="pintura" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('pintura').style.display='none'" class="button display-topright large">X</span>
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Retoques em paredes					<b></b></h5>
+					<h5>Reparos em rachaduras				<b></b></h5>
+					<h5>Reparos em pequenas infiltrações	<b></b></h5>
+					<h5>Reparos em grafiatto 				<b></b></h5>
+					<h5>Reparos em texturas 				<b></b></h5>
+					<h5>Reparos em pisos de Epoxi 			<b></b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>Obras	<i class='fas fa-paint-roller'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Pintura de fachadas							<b>	</b></h5>
+					<h5>Pinturas em ambientes externos e internos	<b>	</b></h5>
+					<h5>Pintura de pisos em Epoxi					<b>	</b></h5>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Manutenção -->
+		<div id="manutencao" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('manutencao').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Troca de fechaduras							<b></b></h5>
+					<h5>Reparos em deck's							<b></b></h5>
+					<h5>Ajuste de portas de móveis					<b></b></h5>
+					<h5>Nivelamento de portas						<b></b></h5>
+					<h5>Ajuste de janelas							<b></b></h5>
+					<h5>Troca de peças de ceramica e porcelanato	<b></b></h5>
+					<h5>Reparos em telhados							<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Instalações	<i class='fas fa-tools'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de portas e janelas				<b></b></h5>
+					<h5>Colocação de cerâmica e porcelanato			<b></b></h5>
+					<h5>Instalação de mantas termicas em telhados	<b></b></h5>
+					<h5>Instalação de churrasqueiras pré-moldadas	<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Obras	<i class='fas fa-hammer'></i></h1>
+				</div>
+				<div class="container">
+					<h5>Construção de telhados						<b>	</b></h5>
+					<h5>Reformas de pisos e azulejos				<b>	</b></h5>
+					<h5>Reformas de ambientes						<b>	</b></h5>
+					<br>
+					<br>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu civil -->
+		<div id="civil" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('civil').style.display='none'" class="button display-topright large">X</span>
+					<h1>Residencial	<i class="fas fa-home"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Fundação e limpeza de terrenos		<b></b></h5>
+					<h5>Construção de piscinas				<b></b></h5>
+					<h5>Ampliação de ambientes				<b></b></h5>
+					<h5>Construção de coberturas e garagens	<b></b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Industrial	<i class="fas fa-industry"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Construção de barracões industriais				<b></b></h5>
+					<h5>Montagem de drywall								<b></b></h5>
+					<h5>Instalação de redes eletricas industriais		<b></b></h5>
+					<h5>Instalação de tubulação de água quente			<b></b></h5>
+					<h5>Instalação de compressores						<b></b></h5>
+					<h5>Pisos em Epoxi									<b></b></h5>
+					<h5>Construção de armações para telhados de zinco	<b></b></h5>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<!-- Promo Section "Statistics" -->
+		<div class="container row center light-grey padding-64" >
+			<div class="quarter">
+				<span class="xxlarge">+25</span>
+				<br>Anos de experiência
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">+2500</span>
+				<br>Projetos Realizados
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">+500</span>
+				<br>Clientes Fidelizados
+			</div>
+			<div class="quarter">
+				<span class="xxlarge">10+</span>
+				<br>Estamos entre os 10+ requisitados profissionais da região
+			</div>
+		</div>
+
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="modal black" onclick="this.style.display='none'">
+			<span class="button xxlarge black padding-large display-topright" title="Close Modal Image">X</span>
+			<div class="modal-content animate-zoom center transparent padding-64">
+				<img id="img01" class="image">
+				<p id="caption" class="opacity large"></p>
+			</div>
+		</div>
+
+		<!-- 07.1 - Nossos clientes -->
+        <div style="background-color: #F7BD63; color: #592529; padding: 28px 28px;" id="parceiros">
+            <h1  class="center "><b> NOSSOS CLIENTES: </b></h1>
+
+            <!-- 07.2- Nossos parceiros -->
+            <div    class="row-padding" style="margin-top:64px">
+
+				<div    class="col  l3  m6">
+                    <a href="https://www.solidpower.com.br/" target="_blank">
+                    <img    src="Imagens/solid.png"        style="width:100%"  class="hover-opacity"   alt="solid">
+                </a>
+                </div>
+				
+				<div    class="col  l3  m6">
+                    <a href="https://www.redragon.com.br/" target="_blank">
+                    <img    src="Imagens/redragon.jpg"        style="width:100%"  class="hover-opacity"   alt="Redragon">
+                </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+		<!-- 07.1 - Nossos parceiros -->
+        <div style="background-color: #592529; color: #F7BD63; padding: 28px 28px;" id="parceiros">
+            <h1 class="center"> <b> NOSSOS PARCEIROS:   </b></h1><br>
+			
+            <!-- 07.2- Nossos parceiros -->
+            <div    class="row-padding" style="margin-top:64px">
+                <div    class="col  l3  m6">
+                    <a href="https://www.votorantimcimentos.com.br/" target="_blank">
+                    <img    src="Imagens/votoran.png"        style="width:100%"  class="hover-opacity"   alt="votoran">
+                </a>
+                </div>
+				
+				<div    class="col  l3  m6">
+                    <a href="https://www.suvinil.com.br/" target="_blank">
+                    <img    src="Imagens/suvinil.png"        style="width:100%"  class="hover-opacity"   alt="suvinil">
+                </a>
+                </div>
+				
+				<div    class="col  l3  m6">
+                    <a href="https://www.tigre.com.br/" target="_blank">
+                    <img    src="Imagens/tigre.png"        style="width:100%"  class="hover-opacity"   alt="tigre">
+                </a>
+                </div>
+
+
+            </div>
+
+			
+        </div>
+
+		
+		
+		<!-- Contato -->
+		<div class="container black" style="padding:128px 16px" id="contact">
+			<h3 class="center">CONTATO</h3>
+			<p class="center large">Com apenas um clique, envie-nos uma mensagem:</p>
+			<div style="margin-top:48px">
+				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Itajaí	-	SC</p>
+				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Camboriú	-	SC</p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5547992276683" target="_blank"> </i> WhatsApp ( 47 ) 9 9227-6683 </i></a></p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5541999381260" target="_blank"> </i> WhatsApp ( 47 ) 9 9711-7889 </i></a></p>
+				<p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> Email: contato@a2solucoesemobras.com.br</p>
+				<br>
+
+				<!-- WhatsApp Flutuante -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+				<a href="https://wa.me/554792276683?text=A²%20Soluções%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje?" 
+					style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+						z-index:1000;" 
+					target="_blank">
+				<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+				</a>
+
+				<!-- Google Maps -->
+				<div    class="container black"   >
+					<h1 class="center">Região de Atendimento:</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56927.06513471268!2d-48.72900299092664!3d-26.90534939036482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc949bf3cf61%3A0xef02eadd26842207!2sItaja%C3%AD%20-%20Volta%20de%20Cima%2C%20Itaja%C3%AD%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1640096276480!5m2!1spt-BR!2sbr" 
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56875.48020552795!2d-48.66101944038714!3d-27.007484398487602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b668abfea471%3A0x4fca490504a87e6e!2sBalne%C3%A1rio%20Cambori%C3%BA%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1640179929780!5m2!1spt-BR!2sbr" 
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="center black padding-64">
+			<a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Para cima</a>
+			<div class="xlarge section">
+				<!--<i class="fa fa-facebook-official hover-opacity"></i>
+				<i class="fa fa-instagram hover-opacity"></i>
+				<i class="fa fa-snapchat hover-opacity"></i>
+				<i class="fa fa-pinterest-p hover-opacity"></i>
+				<i class="fa fa-twitter hover-opacity"></i>
+				<i class="fa fa-linkedin hover-opacity"></i>-->
+			</div>
+			<p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+		</footer>
+		
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+			
+			
+			// Toggle between showing and hiding the sidebar when clicking the menu icon
+			var mySidebar = document.getElementById("mySidebar");
+			
+			function _open() {
+				if (mySidebar.style.display === 'block') {
+					mySidebar.style.display = 'none';
+					} else {
+					mySidebar.style.display = 'block';
+				}
+			}
+			
+			// Close the sidebar with the close button
+			function _close() {
+				mySidebar.style.display = "none";
+			}
+		</script>
+		
+	</body>
+</html>

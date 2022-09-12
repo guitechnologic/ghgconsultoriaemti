@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<title>Photo Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body,h1 {font-family: "Montserrat", sans-serif}
+		img {margin-bottom: -7px}
+		.row-padding img {margin-bottom: 12px}
+	</style>
+	<body>
+		
+		<!-- Sidebar -->
+		<nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+				<i class="fa fa-remove"></i>
+			</a>
+			<div class="bar-block center">
+				<a href="#" class="bar-item button text-grey hover-black">About</a>
+				<a href="#" class="bar-item button text-grey hover-black">Photos</a>
+				<a href="#" class="bar-item button text-grey hover-black">Shop</a>
+				<a href="#" class="bar-item button text-grey hover-black">Contact</a>
+			</div>
+		</nav>
+		
+		<!-- !PAGE CONTENT! -->
+		<div class="content" style="max-width:1500px">
+			
+			<!-- Header -->
+			<div class="opacity">
+				<span class="button xxlarge white right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+				<div class="clear"></div>
+				<header class="center margin-bottom">
+					<h1><b>PORTFOLIO</b></h1>
+					<p><b>Mostre o seu trabalho.</b></p>
+					<p class="padding-16"><button class="button black" onclick="myFunction()">Toggle Grid Padding</button></p>
+				</header>
+			</div>
+			
+			<!-- Photo Grid -->
+			<div class="row" id="myGrid" style="margin-bottom:128px">
+				<div class="third">
+					<img src="Imagens/rocks.jpg" style="width:100%">
+					<img src="Imagens/sound.jpg" style="width:100%">
+					<img src="Imagens/woods.jpg" style="width:100%">
+					<img src="Imagens/rock.jpg" style="width:100%">
+					<img src="Imagens/nature.jpg" style="width:100%">
+					<img src="Imagens/mist.jpg" style="width:100%">
+				</div>
+				
+				<div class="third">
+					<img src="Imagens/coffee.jpg" style="width:100%">
+					<img src="Imagens/bridge.jpg" style="width:100%">
+					<img src="Imagens/notebook.jpg" style="width:100%">
+					<img src="Imagens/london.jpg" style="width:100%">
+					<img src="Imagens/rocks.jpg" style="width:100%">
+					<img src="Imagens/avatar_g.jpg" style="width:100%">
+				</div>
+				
+				<div class="third">
+					<img src="Imagens/mist.jpg" style="width:100%">
+					<img src="Imagens/workbench.jpg" style="width:100%">
+					<img src="Imagens/gondol.jpg" style="width:100%">
+					<img src="Imagens/skies.jpg" style="width:100%">
+					<img src="Imagens/lights.jpg" style="width:100%">
+					<img src="Imagens/workshop.jpg" style="width:100%">
+				</div>
+			</div>
+			
+			<!-- End Page Content -->
+		</div>
+		<div class="center">
+			<p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Curitiba, PR   </p>
+			<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 x xxxx xxxx                      </p>
+			<p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> Email: mail@mail.com         </p>
+			<br>
+		</div>
+
+		<!-- Footer -->
+		<footer class="container padding-64 light-grey center opacity xlarge" style="margin-top:128px"> 
+			<i class="fa fa-facebook-official hover-opacity"></i>
+			<i class="fa fa-instagram hover-opacity"></i>
+			<i class="fa fa-snapchat hover-opacity"></i>
+			<i class="fa fa-pinterest-p hover-opacity"></i>
+			<i class="fa fa-twitter hover-opacity"></i>
+			<i class="fa fa-linkedin hover-opacity"></i>
+			<p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            
+                    Todos os direitos reservados - 2021 </small>
+                    <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+		</footer>
+		
+		<script>
+			// Toggle grid padding
+			function myFunction() {
+				var x = document.getElementById("myGrid");
+				if (x.className === "row") {
+					x.className = "row-padding";
+					} else { 
+					x.className = x.className.replace("row-padding", "row");
+				}
+			}
+			
+			// Open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.width = "100%";
+				document.getElementById("mySidebar").style.display = "block";
+			}
+			
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+			}
+		</script>
+		
+	</body>
+</html>

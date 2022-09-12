@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<title>Advogado template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+		.mySlides {display:none}
+		.tag, .fa {cursor:pointer}
+		.tag {height:15px;width:15px;padding:0;margin-top:6px}
+	</style>
+	<body>
+		
+		<!-- Links (sit on top) -->
+		<div class="top">
+			<div class="row large light-grey">
+				<div class="col s3">
+					<a href="#" class="button block">Home</a>
+				</div>
+				<div class="col s3">
+					<a href="#plans" class="button block">Plans</a>
+				</div>
+				<div class="col s3">
+					<a href="#about" class="button block">About</a>
+				</div>
+				<div class="col s3">
+					<a href="#contact" class="button block">Contact</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content -->
+		<div class="content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+			
+			<div class="panel">
+				<h1><b>IRMÃOS ROCHA</b></h1>
+				<p>Advogados</p>
+			</div>
+			
+			<!-- Slideshow -->
+			<div class="container">
+				<div class="display-container mySlides">
+					<img src="Imagens/DireitoConsumidor.jpg" style="width:100%">
+					<div class="display-middle container padding-32">
+						<span class="white padding-large animate-bottom">Consumidor</span>
+					</div>
+				</div>
+				<div class="display-container mySlides">
+					<img src="Imagens/DireitoTrabalhador.jpg" style="width:100%">
+					<div class="display-middle container padding-32">
+						<span class="white padding-large animate-bottom">Trabalhista</span>
+					</div>
+				</div>
+				<div class="display-container mySlides">
+					<img src="Imagens/DireitoPrevidenciadio.jpg" style="width:100%">
+					<div class="display-middle container padding-32">
+						<span class="white padding-large animate-bottom">Previdenciário</span>
+					</div>
+				</div>
+				<div class="display-container mySlides">
+					<img src="Imagens/DireitoDeFamilia.jpg" style="width:100%">
+					<div class="display-middle container padding-32">
+						<span class="white padding-large animate-bottom">Familiar</span>
+					</div>
+				</div>
+				
+				
+
+				<!-- Slideshow next/previous buttons -->
+				<div class="container dark-grey padding xlarge">
+					<div class="left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left hover-text-teal"></i></div>
+					<div class="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right hover-text-teal"></i></div>
+					
+					<div class="center">
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(1)"></span>
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(2)"></span>
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(3)"></span>
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(4)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fim do Slideshow -->
+			
+			<!-- Grid -->
+			<div class="row container">
+				<div class="center padding-64">
+					<span class="xlarge bottombar border-dark-grey padding-16">Nossa área de atuação:</span>
+				</div>
+				<div class="col l3 m6 light-grey container padding-16">
+					<h3>Direito do Consumidor</h3>
+					<p></p>
+				</div>
+				
+				<div class="col l3 m6 grey container padding-16">
+					<h3>Direito do Trabalhador</h3>
+					<p></p>
+				</div>
+				
+				<div class="col l3 m6 dark-grey container padding-16">
+					<h3>Direito Previdenciário</h3>
+					<p></p>
+				</div>
+				
+				<div class="col l3 m6 black container padding-16">
+					<h3>Direito de Família</h3>
+					<p></p>
+				</div>
+			</div>
+			
+			
+			
+			<!-- Grid -->
+			<div class="row-padding" id="about">
+				<div class="center padding-64">
+					<span class="xlarge bottombar border-dark-grey padding-16">Conheça-nos</span>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="Imagens/team1.jpg" alt="John" style="width:100%">
+						<div class="container">
+							<h3>Jane Doe</h3>
+							<p class="opacity">Direito do consumidor</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="Imagens/team2.jpg" alt="Mike" style="width:100%">
+						<div class="container">
+							<h3>Mike Ross</h3>
+							<p class="opacity">Direito do Trabalhador</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="Imagens/team3.jpg" alt="Jane" style="width:100%">
+						<div class="container">
+							<h3>John Doe</h3>
+							<p class="opacity">Direito de Família</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Contact -->
+			<div class="center padding-64" id="contact">
+				<span class="xlarge bottombar border-dark-grey padding-16">Contate-nos</span>
+			</div>
+
+			<p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Curitiba, PR   </p>
+			<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 x xxxx xxxx                      </p>
+			<p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> Email: mail@mail.com         </p>
+			<br>
+			
+			<form class="container" action="/action_page.php" target="_blank">
+				<div class="section">
+					<label>Name</label>
+					<input class="input border hover-border-black" style="width:100%;" type="text" name="Name" required>
+				</div>
+				<div class="section">
+					<label>Email</label>
+					<input class="input border hover-border-black" style="width:100%;" type="text" name="Email" required>
+				</div>
+				<div class="section">
+					<label>Subject</label>
+					<input class="input border hover-border-black" style="width:100%;" name="Subject" required>
+				</div>
+				<div class="section">
+					<label>Message</label>
+					<input class="input border hover-border-black" style="width:100%;" name="Message" required>
+				</div>
+				<button type="submit" class="button block black">Send</button>
+			</form>
+			
+		</div>
+		
+		<!-- Footer -->
+		
+		<footer class="container padding-32 light-grey center">
+			<h4>Footer</h4>
+			<a href="#" class="button black margin"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+			<div class="xlarge section">
+				<i class="fa fa-facebook-official hover-opacity"></i>
+				<i class="fa fa-instagram hover-opacity"></i>
+				<i class="fa fa-snapchat hover-opacity"></i>
+				<i class="fa fa-pinterest-p hover-opacity"></i>
+				<i class="fa fa-twitter hover-opacity"></i>
+				<i class="fa fa-linkedin hover-opacity"></i>
+			</div>
+			<p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            
+                    Todos os direitos reservados - 2021 </small>
+                    <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+		</footer>
+		
+		
+		<script>
+			// Slideshow
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+			
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demodots");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length} ;
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" white", "");
+				}
+				x[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " white";
+			}
+		</script>
+		
+	</body>
+</html>
